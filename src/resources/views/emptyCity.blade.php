@@ -73,16 +73,19 @@
     </style>
 </head>
 <body>
-    <form action="/weather" method="post" class="city">
-        <label for="cityName">выберете город из списка</label>
-        <select name="cityName" id="">
-            <option value=""></option>
-            <option value="123">123</option>
-        </select>
-        <h2>или</h2>
-        <label for="cityNamePost">введите название своего города</label>
-        <input type="text" name="cityNamePost" id=""><br>
-        <input type="submit" value="показать погоду">
-    </form>
+
+<h1 style="color: darkred; text-align: center;">Выбранный вами город не существует или не был выбран</h1>
+
+<form action="/weather" method="post" class="city">
+    <label for="cityName">выберете город из списка</label>
+    <select name="cityName" id="">
+        <option value=""></option>
+        <option value="123">123</option>
+    </select>
+    <h2>или</h2>
+    <label for="cityNamePost">введите название своего города</label>
+    <input type="text" name="cityNamePost" id=""><br>
+    <input type="submit" value="показать погоду">
+</form>
 </body>
 </html>
