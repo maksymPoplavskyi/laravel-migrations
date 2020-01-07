@@ -19,6 +19,7 @@ class VerifyCsrfToken extends Middleware
      * @var array
      */
     protected $except = [
-        //
+        'http://192.168.99.100:1111/smells/add',
+        'http://192.168.99.100:1111/categories/add',
     ];
 }
